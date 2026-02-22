@@ -1,0 +1,72 @@
+{
+  "title": "Bodyweight – 3 Days – Beginner (Fallback)",
+  "tags": {
+    "goal": "fat_loss",
+    "days": 3,
+    "experience": "beginner",
+    "equipment": "bodyweight"
+  },
+  "days": [
+    {
+      "dayName": "Day 1",
+      "focus": "Push + Core",
+      "warmup": [
+        { "name": "Arm circles", "sets": 1, "reps": "10 each", "restSec": 0 },
+        { "name": "Hip circles", "sets": 1, "reps": "8 each", "restSec": 30 }
+      ],
+      "main": [
+        { "name": "Push-up (or knee)", "sets": 3, "reps": "8-12", "restSec": 60 },
+        { "name": "Pike push-up", "sets": 3, "reps": "6-10", "restSec": 60 },
+        { "name": "Bodyweight squat", "sets": 3, "reps": "12-15", "restSec": 60 }
+      ],
+      "accessories": [
+        { "name": "Plank", "sets": 2, "reps": "30 sec", "restSec": 30 },
+        { "name": "Tricep dip (bench)", "sets": 2, "reps": "8", "restSec": 45 }
+      ],
+      "cooldown": [
+        { "name": "Chest stretch", "sets": 1, "reps": "30 sec", "restSec": 0 }
+      ]
+    },
+    {
+      "dayName": "Day 2",
+      "focus": "Pull + Legs",
+      "warmup": [
+        { "name": "Leg swings", "sets": 1, "reps": "10 each", "restSec": 0 },
+        { "name": "Cat-cow", "sets": 1, "reps": "8", "restSec": 30 }
+      ],
+      "main": [
+        { "name": "Inverted row (table)", "sets": 3, "reps": "8-10", "restSec": 60 },
+        { "name": "Glute bridge", "sets": 3, "reps": "12", "restSec": 60 },
+        { "name": "Lunges", "sets": 3, "reps": "8 each", "restSec": 60 }
+      ],
+      "accessories": [
+        { "name": "Superman", "sets": 2, "reps": "12", "restSec": 45 },
+        { "name": "Dead bug", "sets": 2, "reps": "10 each", "restSec": 30 }
+      ],
+      "cooldown": [
+        { "name": "Hamstring stretch", "sets": 1, "reps": "30 sec each", "restSec": 0 }
+      ]
+    },
+    {
+      "dayName": "Day 3",
+      "focus": "Full body",
+      "warmup": [
+        { "name": "Jumping jacks", "sets": 1, "reps": "30 sec", "restSec": 0 },
+        { "name": "Bodyweight squats", "sets": 1, "reps": "10", "restSec": 30 }
+      ],
+      "main": [
+        { "name": "Bodyweight squat", "sets": 3, "reps": "12", "restSec": 45 },
+        { "name": "Push-up", "sets": 3, "reps": "8-10", "restSec": 45 },
+        { "name": "Inverted row", "sets": 3, "reps": "8", "restSec": 45 }
+      ],
+      "accessories": [
+        { "name": "Mountain climbers", "sets": 2, "reps": "30 sec", "restSec": 30 },
+        { "name": "Plank", "sets": 2, "reps": "30 sec", "restSec": 30 }
+      ],
+      "cooldown": [
+        { "name": "Full body stretch", "sets": 1, "reps": "60 sec", "restSec": 0 }
+      ]
+    }
+  ],
+  "progressionNotes": "Week 1: Focus on form. Progress by adding reps, then moving to harder progressions (e.g. full push-up, elevated feet)."
+}

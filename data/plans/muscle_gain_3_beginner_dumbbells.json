@@ -1,0 +1,73 @@
+{
+  "title": "Muscle Gain – 3 Days – Beginner – Dumbbells",
+  "tags": {
+    "goal": "muscle_gain",
+    "days": 3,
+    "experience": "beginner",
+    "equipment": "dumbbells"
+  },
+  "days": [
+    {
+      "dayName": "Day 1",
+      "focus": "Push",
+      "warmup": [
+        { "name": "Arm circles", "sets": 1, "reps": "10 each", "restSec": 0 },
+        { "name": "Band pull-aparts", "sets": 1, "reps": "15", "restSec": 30 }
+      ],
+      "main": [
+        { "name": "Dumbbell Bench Press", "sets": 4, "reps": "8-10", "restSec": 90 },
+        { "name": "Dumbbell Overhead Press", "sets": 3, "reps": "8-10", "restSec": 90 },
+        { "name": "Incline Dumbbell Press", "sets": 3, "reps": "10", "restSec": 75 }
+      ],
+      "accessories": [
+        { "name": "Tricep extensions", "sets": 2, "reps": "12", "restSec": 60 },
+        { "name": "Lateral raises", "sets": 2, "reps": "12", "restSec": 60 }
+      ],
+      "cooldown": [
+        { "name": "Chest stretch", "sets": 1, "reps": "30 sec each", "restSec": 0 },
+        { "name": "Shoulder stretch", "sets": 1, "reps": "30 sec each", "restSec": 0 }
+      ]
+    },
+    {
+      "dayName": "Day 2",
+      "focus": "Pull",
+      "warmup": [
+        { "name": "Band rows", "sets": 1, "reps": "12", "restSec": 0 },
+        { "name": "Cat-cow", "sets": 1, "reps": "8", "restSec": 30 }
+      ],
+      "main": [
+        { "name": "Dumbbell Row", "sets": 4, "reps": "8-10 each", "restSec": 90 },
+        { "name": "Dumbbell Goblet Squat", "sets": 3, "reps": "10", "restSec": 90 },
+        { "name": "Romanian Deadlift (Dumbbell)", "sets": 3, "reps": "10", "restSec": 90 }
+      ],
+      "accessories": [
+        { "name": "Bicep curls", "sets": 3, "reps": "10", "restSec": 60 },
+        { "name": "Face pulls (band)", "sets": 2, "reps": "15", "restSec": 60 }
+      ],
+      "cooldown": [
+        { "name": "Lat stretch", "sets": 1, "reps": "30 sec each", "restSec": 0 }
+      ]
+    },
+    {
+      "dayName": "Day 3",
+      "focus": "Legs + Core",
+      "warmup": [
+        { "name": "Leg swings", "sets": 1, "reps": "10 each", "restSec": 0 },
+        { "name": "Bodyweight squats", "sets": 1, "reps": "12", "restSec": 30 }
+      ],
+      "main": [
+        { "name": "Dumbbell Goblet Squat", "sets": 4, "reps": "8-10", "restSec": 90 },
+        { "name": "Romanian Deadlift (Dumbbell)", "sets": 3, "reps": "10", "restSec": 90 },
+        { "name": "Dumbbell Lunge", "sets": 3, "reps": "8 each", "restSec": 75 }
+      ],
+      "accessories": [
+        { "name": "Glute Bridge", "sets": 3, "reps": "12", "restSec": 60 },
+        { "name": "Plank", "sets": 2, "reps": "45 sec", "restSec": 45 }
+      ],
+      "cooldown": [
+        { "name": "Quad & hamstring stretch", "sets": 1, "reps": "30 sec each", "restSec": 0 }
+      ]
+    }
+  ],
+  "progressionNotes": "Week 1: Prioritize controlled reps and full range of motion. Rest 90s on main lifts. When you hit top of rep range for all sets, add weight next week."
+}

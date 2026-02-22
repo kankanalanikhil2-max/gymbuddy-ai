@@ -1,0 +1,75 @@
+{
+  "title": "Strength – 3 Days – Beginner – Full Gym",
+  "tags": {
+    "goal": "strength",
+    "days": 3,
+    "experience": "beginner",
+    "equipment": "full_gym"
+  },
+  "days": [
+    {
+      "dayName": "Day 1",
+      "focus": "Squat focus",
+      "warmup": [
+        { "name": "Leg swings", "sets": 1, "reps": "10 each", "restSec": 0 },
+        { "name": "Bodyweight squats", "sets": 1, "reps": "10", "restSec": 30 },
+        { "name": "Empty bar squats", "sets": 1, "reps": "5", "restSec": 60 }
+      ],
+      "main": [
+        { "name": "Back Squat", "sets": 4, "reps": "5", "restSec": 120 },
+        { "name": "Bench Press", "sets": 3, "reps": "5", "restSec": 120 },
+        { "name": "Barbell Row", "sets": 3, "reps": "6", "restSec": 90 }
+      ],
+      "accessories": [
+        { "name": "Overhead Press", "sets": 2, "reps": "8", "restSec": 90 },
+        { "name": "Plank", "sets": 2, "reps": "45 sec", "restSec": 60 }
+      ],
+      "cooldown": [
+        { "name": "Quad stretch", "sets": 1, "reps": "30 sec each", "restSec": 0 },
+        { "name": "Hip flexor stretch", "sets": 1, "reps": "30 sec each", "restSec": 0 }
+      ]
+    },
+    {
+      "dayName": "Day 2",
+      "focus": "Hinge focus",
+      "warmup": [
+        { "name": "Hip circles", "sets": 1, "reps": "8 each", "restSec": 0 },
+        { "name": "Good mornings (light)", "sets": 1, "reps": "8", "restSec": 30 }
+      ],
+      "main": [
+        { "name": "Deadlift", "sets": 3, "reps": "5", "restSec": 180 },
+        { "name": "Back Squat", "sets": 3, "reps": "5", "restSec": 120 },
+        { "name": "Overhead Press", "sets": 3, "reps": "5", "restSec": 90 }
+      ],
+      "accessories": [
+        { "name": "Pull-ups or lat pulldown", "sets": 2, "reps": "8", "restSec": 90 },
+        { "name": "Face pulls", "sets": 2, "reps": "12", "restSec": 60 }
+      ],
+      "cooldown": [
+        { "name": "Hamstring stretch", "sets": 1, "reps": "30 sec each", "restSec": 0 },
+        { "name": "Lower back stretch", "sets": 1, "reps": "30 sec", "restSec": 0 }
+      ]
+    },
+    {
+      "dayName": "Day 3",
+      "focus": "Bench + volume",
+      "warmup": [
+        { "name": "Arm circles", "sets": 1, "reps": "10 each", "restSec": 0 },
+        { "name": "Push-ups", "sets": 1, "reps": "8", "restSec": 30 }
+      ],
+      "main": [
+        { "name": "Back Squat", "sets": 3, "reps": "5", "restSec": 120 },
+        { "name": "Bench Press", "sets": 4, "reps": "5", "restSec": 120 },
+        { "name": "Deadlift", "sets": 2, "reps": "5", "restSec": 180 }
+      ],
+      "accessories": [
+        { "name": "Barbell Row", "sets": 2, "reps": "8", "restSec": 90 },
+        { "name": "Cable tricep pushdown", "sets": 2, "reps": "10", "restSec": 60 }
+      ],
+      "cooldown": [
+        { "name": "Chest & shoulder stretch", "sets": 1, "reps": "30 sec each", "restSec": 0 }
+      ]
+    }
+  ],
+  "progressionNotes": "Week 1: Add 2.5–5 lb per session on main lifts when all reps are completed with good form. Rest 2–3 min on heavy sets."
+}

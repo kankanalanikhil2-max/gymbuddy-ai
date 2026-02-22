@@ -1,0 +1,73 @@
+{
+  "title": "Fat Loss – 3 Days – Beginner – Dumbbells",
+  "tags": {
+    "goal": "fat_loss",
+    "days": 3,
+    "experience": "beginner",
+    "equipment": "dumbbells"
+  },
+  "days": [
+    {
+      "dayName": "Day 1",
+      "focus": "Upper + Core",
+      "warmup": [
+        { "name": "Arm circles", "sets": 1, "reps": "10 each", "restSec": 0, "notes": "30 sec" },
+        { "name": "Band rows", "sets": 1, "reps": "12", "restSec": 30 }
+      ],
+      "main": [
+        { "name": "Dumbbell Goblet Squat", "sets": 3, "reps": "12-15", "restSec": 60 },
+        { "name": "Dumbbell Bench Press", "sets": 3, "reps": "10-12", "restSec": 60 },
+        { "name": "Dumbbell Row", "sets": 3, "reps": "10-12 each", "restSec": 60 }
+      ],
+      "accessories": [
+        { "name": "Dumbbell Shoulder Press", "sets": 2, "reps": "10", "restSec": 45 },
+        { "name": "Plank", "sets": 2, "reps": "30 sec", "restSec": 30 }
+      ],
+      "cooldown": [
+        { "name": "Standing quad stretch", "sets": 1, "reps": "30 sec each", "restSec": 0 },
+        { "name": "Chest doorway stretch", "sets": 1, "reps": "30 sec", "restSec": 0 }
+      ]
+    },
+    {
+      "dayName": "Day 2",
+      "focus": "Lower + Cardio",
+      "warmup": [
+        { "name": "Leg swings", "sets": 1, "reps": "10 each", "restSec": 0 },
+        { "name": "Bodyweight squats", "sets": 1, "reps": "10", "restSec": 30 }
+      ],
+      "main": [
+        { "name": "Romanian Deadlift (Dumbbell)", "sets": 3, "reps": "10-12", "restSec": 60 },
+        { "name": "Dumbbell Goblet Squat", "sets": 3, "reps": "12", "restSec": 60 },
+        { "name": "Dumbbell Lunge", "sets": 3, "reps": "8 each", "restSec": 60 }
+      ],
+      "accessories": [
+        { "name": "Glute Bridge", "sets": 2, "reps": "12", "restSec": 45 },
+        { "name": "Mountain climbers", "sets": 2, "reps": "30 sec", "restSec": 30 }
+      ],
+      "cooldown": [
+        { "name": "Hamstring stretch", "sets": 1, "reps": "30 sec each", "restSec": 0 }
+      ]
+    },
+    {
+      "dayName": "Day 3",
+      "focus": "Full body circuit",
+      "warmup": [
+        { "name": "Jumping jacks", "sets": 1, "reps": "30 sec", "restSec": 0 },
+        { "name": "Hip circles", "sets": 1, "reps": "8 each", "restSec": 30 }
+      ],
+      "main": [
+        { "name": "Dumbbell Goblet Squat", "sets": 3, "reps": "12", "restSec": 45 },
+        { "name": "Push-up (or knee)", "sets": 3, "reps": "8-12", "restSec": 45 },
+        { "name": "Dumbbell Row", "sets": 3, "reps": "10 each", "restSec": 45 }
+      ],
+      "accessories": [
+        { "name": "Bicep curls", "sets": 2, "reps": "12", "restSec": 30 },
+        { "name": "Dead bug", "sets": 2, "reps": "10 each", "restSec": 30 }
+      ],
+      "cooldown": [
+        { "name": "Full body stretch", "sets": 1, "reps": "60 sec", "restSec": 0 }
+      ]
+    }
+  ],
+  "progressionNotes": "Week 1: Focus on form. Keep rest short (45–60s) to keep heart rate up. Add 1 rep per set when it feels easy."
+}

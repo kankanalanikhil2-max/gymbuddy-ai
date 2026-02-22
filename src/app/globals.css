@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0a0a0a;
+  --surface: #1a1a1a;
+  --surface-elevated: #242424;
+  --border: #2e2e2e;
+  --accent: #22c55e;
+  --accent-hover: #16a34a;
+  --text: #fafafa;
+  --text-muted: #a3a3a3;
+}
+
+body {
+  @apply bg-[var(--bg)] text-[var(--text)] antialiased;
+}
+
+/* Smooth scroll for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Skip link: visible when focused for keyboard users */
+.skip-link {
+  @apply fixed left-4 top-4 z-[100] -translate-y-[200%] rounded-lg border-2 border-accent bg-[var(--bg)] px-4 py-2 font-semibold text-accent transition focus:translate-y-0 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-[var(--bg)];
+}
+
+/* Visible focus for keyboard navigation (not for mouse click) */
+a:focus-visible,
+button:focus-visible,
+[href]:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible {
+  @apply outline-none ring-2 ring-accent ring-offset-2 ring-offset-[var(--bg)];
+}
+
+/* When a radio inside a label is focused, show ring on the label (onboarding goal step) */
+label:has(input:focus) {
+  @apply outline-none ring-2 ring-accent ring-offset-2 ring-offset-[var(--bg)];
+}

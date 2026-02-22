@@ -1,0 +1,24 @@
+{
+  "title": "Strength – Any Diet",
+  "goal": "strength",
+  "dietPreference": "any",
+  "plateMethod": "Eat enough to fuel training and recovery: protein at each meal (meat, fish, eggs, dairy, or plant-based alternatives), complex carbs around training (rice, oats, potatoes), and healthy fats (nuts, olive oil, avocado). Don’t undereat; moderate surplus supports strength gains.",
+  "hydration": "Aim for 2.5–3 L of water per day. Drink before, during, and after training. Electrolytes from food (e.g. bananas, salted meals) help if you sweat a lot.",
+  "sampleMeals": [
+    "Breakfast: Eggs with toast and fruit; or oatmeal with milk, nuts, and banana.",
+    "Lunch: Lean protein (chicken, fish, tofu, legumes) with rice or potato and vegetables.",
+    "Dinner: Similar to lunch—protein, starch, and vegetables. Option for red meat 1–2x per week for iron.",
+    "Pre/workout: Carbs + light protein 1–2 hours before (e.g. banana and yogurt).",
+    "Post-workout: Protein and carbs within 1–2 hours (e.g. chicken and rice, or a balanced meal)."
+  ],
+  "grocerySuggestions": [
+    "Eggs, chicken, fish, lean beef (if desired)",
+    "Legumes, tofu, Greek yogurt for plant-based",
+    "Rice, oats, potatoes, whole-grain bread",
+    "Vegetables (broccoli, spinach, peppers)",
+    "Fruits (bananas, berries, apples)",
+    "Nuts, nut butter, olive oil",
+    "Milk or fortified plant milk"
+  ],
+  "disclaimer": "General guidance only; consult a healthcare or nutrition professional for personalized advice, especially if you have medical conditions or dietary restrictions."
+}

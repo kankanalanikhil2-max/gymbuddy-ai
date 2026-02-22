@@ -1,0 +1,30 @@
+# Dependencies and build output (reinstalled/built in container)
+node_modules
+.next
+out
+build
+dist
+
+# Env (use App Runner / runtime env)
+.env
+.env.*
+!.env.example
+
+# Git and IDE
+.git
+.gitignore
+.idea
+.vscode
+*.md
+!README.md
+
+# Debug and OS
+*.log
+.DS_Store
+Thumbs.db
+
+# Tests and tooling (not needed in image)
+coverage
+.nyc_output
+*.test.*
+*.spec.*

@@ -1,0 +1,25 @@
+{
+  "title": "Muscle Gain – Vegetarian",
+  "goal": "muscle_gain",
+  "dietPreference": "veg",
+  "plateMethod": "Eat balanced meals with adequate protein at each: aim for ~1.6–2 g protein per kg body weight from legumes, dairy, tofu, and paneer. Include complex carbs (oats, rice, potatoes) and healthy fats. Spread intake across 3–4 meals and optional snacks.",
+  "hydration": "Drink 2.5–3 L of water daily. Hydration supports recovery and performance. Have water with meals and during training.",
+  "sampleMeals": [
+    "Breakfast: Oatmeal with banana, nuts, and a scoop of protein or Greek yogurt; or tofu scramble with toast and avocado.",
+    "Lunch: Dal or chickpea curry with rice, vegetables, and a side of yogurt or paneer.",
+    "Dinner: Tofu or paneer stir-fry with vegetables and quinoa; or lentil soup with whole-grain bread and salad.",
+    "Post-workout: Greek yogurt with fruit and nuts; or a smoothie with banana, milk, and protein.",
+    "Snacks: Nuts, cheese, hummus with veggies, or a peanut butter sandwich."
+  ],
+  "grocerySuggestions": [
+    "Greek yogurt, milk, paneer",
+    "Lentils, chickpeas, black beans",
+    "Tofu, tempeh",
+    "Oats, rice, quinoa, whole-grain bread",
+    "Bananas, berries, dried fruit",
+    "Nuts, nut butter, seeds",
+    "Broccoli, spinach, sweet potato",
+    "Olive oil, coconut oil"
+  ],
+  "disclaimer": "General guidance only; consult a healthcare or nutrition professional for personalized advice, especially if you have medical conditions or dietary restrictions."
+}
