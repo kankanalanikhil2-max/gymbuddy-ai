@@ -49,7 +49,7 @@ This guide is for **education use**: deploy with the **smallest size** and **min
    - **Option A – Configuration file:** Configuration source = **Use a configuration file**. Do **not** select Runtime: Docker. App Runner will read **apprunner.yaml** (Node.js 18) from the repo.
    - **Option B – Manual (recommended if Option A fails):** Configuration source = **Configure all settings here**. Then set:
      - **Runtime**: **Node.js 18** (choose from the dropdown).
-     - **Build command**: `npm ci && npm run build`
+     - **Build command**: `npm install && npm run build`
      - **Start command**: `npm start`
    - With Option B you do not use apprunner.yaml; the console settings are used.
 5. Click **Next**.
@@ -136,8 +136,9 @@ If you want every push to `main` to redeploy:
 
 | Issue | What to do |
 |-------|------------|
-| "Runtime version is not supported" | You likely created the service with **Runtime: Docker** in the console. App Runner then ignores **apprunner.yaml** and tries to use Docker. **Fix:** Delete this service and create a **new** one. In Step 2, choose **Configuration source: Use a configuration file** and do **not** select Docker as runtime. The runtime (nodejs22) must come from **apprunner.yaml** only. |
-| Build fails (other) | In the service, open **Logs** (or **Deployments** → failed deployment → **View logs**). Ensure **Branch** is **main** and **apprunner.yaml** is in the repo root. If the region doesn’t support nodejs22, change **apprunner.yaml** to `runtime: nodejs18` and push again. |
+| "Runtime version is not supported" | Use **Option B** (Configure all settings here) and select **Runtime: Node.js 18**. Or create a new service and do not choose Docker. |
+| **"Failed to execute build command"** | The build (e.g. `npm ci` or `npm run build`) failed. Open the service → **Deployments** → click the failed deployment → **View logs** to see the real error. Common fixes: (1) **package.json** has `"engines": {"node": ">=18.0.0"}` so Node 18 is allowed—ensure this is pushed. (2) If the log shows **JavaScript heap out of memory**, the build needs more memory; in **Configure service**, try **1 vCPU, 2 GB** instead of 0.25 / 0.5 GB. (3) If the log shows a missing module or script error, fix that in code and push again. |
+| Build fails (other) | In the service, open **Logs** (or **Deployments** → failed deployment → **View logs**). Ensure **Branch** is **main**. |
 | Service “Unhealthy” | Confirm **Health check path** is exactly **/api/health** (no typo). After a code fix, trigger a new deployment. |
 | 502 or can’t open app | Wait 2–3 minutes after status is **Running**. If it still fails, check **Logs** for errors. |
 | GitHub connection missing | In **App Runner** → **Create service** → under GitHub, click **Add new** and authorize again; then pick the **gymbuddy-ai** repo. |
