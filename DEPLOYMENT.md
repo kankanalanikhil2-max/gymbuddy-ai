@@ -1,6 +1,7 @@
 # Deploying GymBuddy AI to AWS App Runner
 
-This guide walks you through deploying the app to **AWS App Runner** using a **Docker image** (recommended) or **source-based** deployment.
+- **For minimal cost / education**: use the step-by-step guide **[APP-RUNNER-FREE-TIER.md](APP-RUNNER-FREE-TIER.md)** (smallest instance, pause when not in use).
+- This page covers all deployment options in more detail.
 
 ## Prerequisites
 
