@@ -45,10 +45,13 @@ This guide is for **education use**: deploy with the **smallest size** and **min
 3. Back in App Runner:
    - **Repository**: select **kankanalanikhil2-max/gymbuddy-ai**.
    - **Branch**: **main**.
-4. **Deployment settings** (important):
-   - **Configuration source**: choose **Use a configuration file** (so App Runner uses **apprunner.yaml** from the repo).
-   - **Do not** choose "Configure all settings here" and do **not** select **Runtime: Docker**. When using a config file, the runtime (Node.js 22) comes from **apprunner.yaml** only. If the console shows a Runtime dropdown, leave it as the default or pick a Node.js option—never Docker.
-   - You don’t need to fill in Build command or Start command; they’re in **apprunner.yaml**.
+4. **Deployment settings** – use **Option A** or **Option B** (if you got "runtime version is not supported", use **Option B**):
+   - **Option A – Configuration file:** Configuration source = **Use a configuration file**. Do **not** select Runtime: Docker. App Runner will read **apprunner.yaml** (Node.js 18) from the repo.
+   - **Option B – Manual (recommended if Option A fails):** Configuration source = **Configure all settings here**. Then set:
+     - **Runtime**: **Node.js 18** (choose from the dropdown).
+     - **Build command**: `npm ci && npm run build`
+     - **Start command**: `npm start`
+   - With Option B you do not use apprunner.yaml; the console settings are used.
 5. Click **Next**.
 
 ---
@@ -84,7 +87,7 @@ This guide is for **education use**: deploy with the **smallest size** and **min
 ## Step 5: Review and create
 
 1. Review:
-   - Source: GitHub, **main**, Docker.
+   - Source: GitHub, **main**, Node.js (or config file).
    - Service: **0.25 vCPU**, **0.5 GB**, port **3000**.
    - Health: **/api/health**.
 2. Click **Create & deploy service**.
