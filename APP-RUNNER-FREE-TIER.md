@@ -45,9 +45,10 @@ This guide is for **education use**: deploy with the **smallest size** and **min
 3. Back in App Runner:
    - **Repository**: select **kankanalanikhil2-max/gymbuddy-ai**.
    - **Branch**: **main**.
-4. **Deployment settings**:
-   - **Configuration source**: **Use a configuration file** (App Runner will use the **apprunner.yaml** in your repo).
-   - The repo’s **apprunner.yaml** specifies Node.js 20, `npm ci` / `npm run build` / `npm start`, and port 3000. You don’t need to fill in Build or Start command.
+4. **Deployment settings** (important):
+   - **Configuration source**: choose **Use a configuration file** (so App Runner uses **apprunner.yaml** from the repo).
+   - **Do not** choose "Configure all settings here" and do **not** select **Runtime: Docker**. When using a config file, the runtime (Node.js 22) comes from **apprunner.yaml** only. If the console shows a Runtime dropdown, leave it as the default or pick a Node.js option—never Docker.
+   - You don’t need to fill in Build command or Start command; they’re in **apprunner.yaml**.
 5. Click **Next**.
 
 ---
@@ -132,7 +133,8 @@ If you want every push to `main` to redeploy:
 
 | Issue | What to do |
 |-------|------------|
-| Build fails | In the service, open **Logs** (or **Deployments** → failed deployment → **View logs**). Check for build errors. Ensure **Branch** is **main** and **apprunner.yaml** is in the repo root. If you see an error about "runtime" or "nodejs20", edit **apprunner.yaml** and change `runtime: nodejs20` to `runtime: nodejs18`, then commit and push (or trigger a new deployment). |
+| "Runtime version is not supported" | You likely created the service with **Runtime: Docker** in the console. App Runner then ignores **apprunner.yaml** and tries to use Docker. **Fix:** Delete this service and create a **new** one. In Step 2, choose **Configuration source: Use a configuration file** and do **not** select Docker as runtime. The runtime (nodejs22) must come from **apprunner.yaml** only. |
+| Build fails (other) | In the service, open **Logs** (or **Deployments** → failed deployment → **View logs**). Ensure **Branch** is **main** and **apprunner.yaml** is in the repo root. If the region doesn’t support nodejs22, change **apprunner.yaml** to `runtime: nodejs18` and push again. |
 | Service “Unhealthy” | Confirm **Health check path** is exactly **/api/health** (no typo). After a code fix, trigger a new deployment. |
 | 502 or can’t open app | Wait 2–3 minutes after status is **Running**. If it still fails, check **Logs** for errors. |
 | GitHub connection missing | In **App Runner** → **Create service** → under GitHub, click **Add new** and authorize again; then pick the **gymbuddy-ai** repo. |
