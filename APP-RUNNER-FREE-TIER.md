@@ -30,7 +30,7 @@ This guide is for **education use**: deploy with the **smallest size** and **min
 
 1. Log in to the **AWS Console**: https://console.aws.amazon.com
 2. In the top search bar, type **App Runner** and open **App Runner**.
-3. Choose a **region** (e.g. **US East (N. Virginia) – us-east-1**) from the top-right. You’ll use this region for all steps.
+3. Choose **US East (N. Virginia) – us-east-1** from the top-right (other regions may not show all runtimes). You’ll use this region for all steps.
 4. Click **Create service**.
 
 ---
@@ -45,13 +45,11 @@ This guide is for **education use**: deploy with the **smallest size** and **min
 3. Back in App Runner:
    - **Repository**: select **kankanalanikhil2-max/gymbuddy-ai**.
    - **Branch**: **main**.
-4. **Deployment settings** – use **Option A** or **Option B** (if you got "runtime version is not supported", use **Option B**):
-   - **Option A – Configuration file:** Configuration source = **Use a configuration file**. Do **not** select Runtime: Docker. App Runner will read **apprunner.yaml** (Node.js 18) from the repo.
-   - **Option B – Manual (recommended if Option A fails):** Configuration source = **Configure all settings here**. Then set:
-     - **Runtime**: **Node.js 18** (choose from the dropdown).
-     - **Build command**: `npm install && npm run build`
-     - **Start command**: `npm start`
-   - With Option B you do not use apprunner.yaml; the console settings are used.
+4. **Deployment settings** – to avoid "runtime version is not supported", **do not use the configuration file**. Do this:
+   - **Configuration source**: select **Configure all settings here** (not "Use a configuration file").
+   - **Runtime**: open the dropdown and choose **Node.js 22** (or **Nodejs 22**). Do **not** choose Docker or any other runtime.
+   - **Build command**: `npm install && npm run build`
+   - **Start command**: `npm start`
 5. Click **Next**.
 
 ---
@@ -136,8 +134,8 @@ If you want every push to `main` to redeploy:
 
 | Issue | What to do |
 |-------|------------|
-| "Runtime version is not supported" | Use **Option B** (Configure all settings here) and select **Runtime: Node.js 18**. Or create a new service and do not choose Docker. |
-| **"Failed to execute build command"** | The build (e.g. `npm ci` or `npm run build`) failed. Open the service → **Deployments** → click the failed deployment → **View logs** to see the real error. Common fixes: (1) **package.json** has `"engines": {"node": ">=18.0.0"}` so Node 18 is allowed—ensure this is pushed. (2) If the log shows **JavaScript heap out of memory**, the build needs more memory; in **Configure service**, try **1 vCPU, 2 GB** instead of 0.25 / 0.5 GB. (3) If the log shows a missing module or script error, fix that in code and push again. |
+| **"Runtime version is not supported"** | Use **Configure all settings here** (not "Use a configuration file"). In **Runtime** choose **Node.js 22**. Use region **us-east-1** (N. Virginia). If it still fails, **delete the service**, create a **new** one, and on Step 2 set Configuration source = **Configure all settings here** and Runtime = **Node.js 22** before clicking Next. |
+| **"Failed to execute build command"** | Open the service → **Deployments** → failed deployment → **View logs**. Fix the error shown there (e.g. out of memory → try **1 vCPU, 2 GB**; missing module → fix code and push). |
 | Build fails (other) | In the service, open **Logs** (or **Deployments** → failed deployment → **View logs**). Ensure **Branch** is **main**. |
 | Service “Unhealthy” | Confirm **Health check path** is exactly **/api/health** (no typo). After a code fix, trigger a new deployment. |
 | 502 or can’t open app | Wait 2–3 minutes after status is **Running**. If it still fails, check **Logs** for errors. |

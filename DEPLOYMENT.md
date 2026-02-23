@@ -87,7 +87,7 @@ Then configure service name, CPU/memory, and create the service.
 
 App Runner can also build from source using a build spec instead of Docker:
 
-1. **Runtime**: Managed runtime → **Node.js 20**.
+1. **Runtime**: Managed runtime → **Node.js 22**.
 2. **Build command**: `npm ci && npm run build`
 3. **Run command**: `npm start`
 4. **Build artifact**: Leave default (App Runner will use the built app).
@@ -122,7 +122,7 @@ Configure App Runner’s health check to use **path** `/api/health` so the servi
 |-----------------|-----------------------------------------|
 | Port            | 3000                                    |
 | Health path     | `/api/health`                            |
-| Node            | 20+ (Dockerfile uses `node:20-alpine`)  |
+| Node            | 22+ (Dockerfile uses `node:22-alpine`)  |
 | Env vars       | None required for current feature set   |
 | Data           | Bundled in image via Dockerfile (`data/`) |
 
