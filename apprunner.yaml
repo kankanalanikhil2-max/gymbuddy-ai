@@ -1,7 +1,7 @@
 # AWS App Runner configuration (required when "Use a configuration file" is selected)
-# Uses Node.js 20 managed runtime. Build and run from source; no Dockerfile needed for this path.
+# Uses Node.js 22 (latest supported App Runner runtime).
 version: 1.0
-runtime: nodejs20
+runtime: nodejs22
 build:
   commands:
     build:
