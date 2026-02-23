@@ -5,6 +5,11 @@ build:
     build:
       - npm install
       - npm run build
+  env:
+    - name: NODE_OPTIONS
+      value: "--max-old-space-size=2048"
+    - name: CI
+      value: "true"
 run:
   command: npm start
   network:

@@ -135,7 +135,7 @@ If you want every push to `main` to redeploy:
 | Issue | What to do |
 |-------|------------|
 | **"Runtime version is not supported"** | Use **Configure all settings here** (not "Use a configuration file"). In **Runtime** choose **Node.js 22**. Use region **us-east-1** (N. Virginia). If it still fails, **delete the service**, create a **new** one, and on Step 2 set Configuration source = **Configure all settings here** and Runtime = **Node.js 22** before clicking Next. |
-| **"Failed to execute build command"** | Open the service → **Deployments** → failed deployment → **View logs**. Fix the error shown there (e.g. out of memory → try **1 vCPU, 2 GB**; missing module → fix code and push). |
+| **"Failed to execute build command"** | The build (npm install or npm run build) failed. **Find the real error:** App Runner service → **Deployments** tab → click the **failed** deployment ID → **View logs** or **Build logs**. Scroll to the bottom to see the actual npm/Next.js error (e.g. "JavaScript heap out of memory", a missing module, or a TypeScript error). We added `NODE_OPTIONS=--max-old-space-size=2048` in apprunner.yaml to help with memory; push and redeploy. If the log shows another error, fix that in code and push. |
 | Build fails (other) | In the service, open **Logs** (or **Deployments** → failed deployment → **View logs**). Ensure **Branch** is **main**. |
 | Service “Unhealthy” | Confirm **Health check path** is exactly **/api/health** (no typo). After a code fix, trigger a new deployment. |
 | 502 or can’t open app | Wait 2–3 minutes after status is **Running**. If it still fails, check **Logs** for errors. |
